@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversor de Divisas</title>
+    <meta charset="UTF-8">
+    <!--BOOTSTRAP-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--EstilosCSS-->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="blue-bg"></div>
+        <div class="white-bg"></div>
+
+        <div class="converter-wrapper">
+            <h2>SISTEMA DE CONVERSION DE MONEDAS</h2>
+            
+            <!--Inputs-->
+            <div class="converter-inputs">
+                <div class="from-amount">
+                    <label for="">Cantidad</label>
+                    <input type="number" id='cantidad-uno' class="form-control" placeholder="$" min="0" value="1">
+                </div>
+                <div class="select-box">
+                    <img id="banderaUno" src="https://flagsapi.com/US/flat/64.png">
+                    <select id="moneda-uno">
+
+                    </select>
+                </div>
+                <div class="icon">
+                    <button type="button" id="swap-btn" id="taza">
+                        <img src="flecha.png">
+                    </button>
+                </div>
+                <div class="select-box">
+                    <img id="banderaDos" src="https://flagsapi.com/US/flat/64.png">
+                    <select id="moneda-dos">
+
+                    </select>
+                </div>
+            </div>
+
+            <!-- Resultados y boton -->
+            <div class="result-wrapper">
+                <p>
+                    <span class="from-result" id="cambio"></span>
+
+                </p>
+            </div>
+            <button type="button" id="convertir" class="convert-btn">Convertir</button>
+        </div>
+    </div>
+
+
+    <!--ArchivoJS-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
